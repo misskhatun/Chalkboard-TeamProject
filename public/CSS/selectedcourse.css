@@ -1,0 +1,31 @@
+.coursename,
+.coursedescription,
+.instructor {
+  margin: auto;
+  width: 40%;
+  padding: 1%;
+}
+
+h1,
+.display {
+  text-align: center;
+}
+
+.editbutton {
+  margin: auto;
+  display: block;
+  padding: 10px;
+  font-size: 1.2em;
+}
+
+@media only screen and (max-width: 990px) {
+  textarea {
+    width: 20em;
+  }
+}
+
+@media only screen and (max-width: 450px) {
+  textarea {
+    width: 15em;
+  }
+}

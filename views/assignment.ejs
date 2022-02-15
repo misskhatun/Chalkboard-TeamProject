@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/CSS/assignment.css" />
+    <link rel="stylesheet" href="/CSS/header.css" />
+    <title>Assignment Page</title>
+  </head>
+  <body>
+    <header>
+    <%- include('./partials/header') %>
+    </header>
+
+    <h1><%= data.assignmentname %></h1>
+    <p class="assignmentdesc">
+    <%= data.assignmentdesc %>
+    </p>
+    <form action="#">
+      <div class="questionanswermodule">
+        <% data.questions.forEach((quest, index) => { %>
+          <% const answ = data.answers[index];%>
+            <p class="questiontext">Question:
+              <span class="question"><%= quest %></span>
+            </p>
+      
+          <label for="answer">Answer:</label>
+          <input type="text" id="answer" name="answer" />
+          <input type="file" id="filesubmit" name="filesubmit" />
+          
+          <% if (accounttype == "Instructor") { %>
+            <p class="questiontext">Answer Key: <%= answ %></p>
+          <% } %>
+        <% }) %>
+      <% if (data.duedate) { %> 
+        <p class="questiontext">Due Date:
+          <%= data.duedate.getMonth()+1 %>/<%= data.duedate.getDate() %>/<%= data.duedate.getFullYear() %> 
+        </p>
+      <% }%>
+      </div>
+
+      <input type="submit" id="savedraft" name="savedraft" value="Save as Draft" />
+      <input type="submit" id="submit" name="submit" />
+    </form>
+  </body>
+</html>

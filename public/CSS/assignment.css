@@ -1,0 +1,55 @@
+h1 {
+  text-align: center;
+}
+
+p {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1.2em;
+  width: 70vw;
+  margin-left: 5vw;
+}
+
+input {
+  display: block;
+}
+
+.questionanswermodule {
+  margin-left: 10vw;
+}
+
+.questiontext {
+  text-align: left;
+  margin-left: 0vw;
+}
+
+label,
+#answer,
+#filesubmit {
+  display: inline-block;
+}
+
+#savedraft,
+#submit {
+  display: block;
+  margin: 15px;
+  margin-top: 20px;
+  margin-left: 45px;
+  font-size: 1em;
+  margin-left: 10vw;
+}
+
+@media only screen and (max-width: 600px) {
+  input {
+    margin: 15px auto;
+  }
+
+  #savedraft,
+  #submit {
+    display: block;
+    margin: 15px auto;
+  }
+
+  .questionanswermodule {
+    margin-left: 25px;
+  }
+}

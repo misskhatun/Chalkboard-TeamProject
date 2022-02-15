@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../CSS/grading.css" />
+    <link rel="stylesheet" href="../CSS/header.css" />
+    <title>Grading View</title>
+  </head>
+  <body>
+    <header>
+    <%- include('./partials/header') %>
+    </header>
+    <img class="pic" src="/img/chalkboard-logos_white.png" alt="logo">
+    <h1>Assignment 1</h1>
+    <p>Bio Web</p>
+    <p class="assignmentdesc">
+      
+    </p>
+    <form action="#">
+      <div class="questionanswermodule">
+        <p class="questiontext">
+          Question:
+          <span class="question">What is HTML?</span>
+        </p>
+        <p class="answertext">
+          Answer:
+          <span class="answer">
+            Hyper Text Markup Language
+          </span>
+        </p>
+        <input class="fileattach" type="file" value="Attach"/>
+        <p class="answerkey">
+          Answer Key:
+          <span class="answerkeyspan">Hyper Text Markup Language</span>
+        </p>
+        <span class="rightorwrong">
+          <input type="radio" id="correct" name="correcttype" value="correct" required />
+          <label for="correct" class="correcttypeclass">Correct</label>
+          <input type="radio" id="incorrect" name="correcttype" value="incorrect" required />
+          <label for="incorrect" class="correcttypeclass">Incorrect</label>
+        </span>
+      </div>
+      <div class="feedback">
+        <label for="feedback">Feedback:</label>
+        <textarea id="feedback" name="feedback" rows="4" cols="50"></textarea>
+      </div>
+      <div class="grade">
+        <label for="grade">Grade:</label>
+        <input type="number" id="grade" name="grade" min="0" max="100" required />
+        <input type="submit" id="submit" name="submit" class="button" />
+        <button type="button" class="button">Reopen</button>
+      </div>
+    </form>
+  </body>
+</html>

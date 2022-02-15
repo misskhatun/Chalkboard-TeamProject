@@ -1,0 +1,32 @@
+table {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+td,
+th {
+  border: 1px solid #dddddd;
+  text-align: left;
+  padding: 8px;
+}
+
+.admintable {
+  margin: 5%;
+  overflow-x: auto;
+}
+
+.button {
+  margin: 5px;
+}
+
+/* tr:nth-child(even) {
+  background-color: #d46161;
+} */
+body{
+  background-color:cadetblue
+}
+
+.pic{
+  width:200px;
+}

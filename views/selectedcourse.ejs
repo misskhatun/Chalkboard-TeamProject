@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../CSS/header.css" />
+    <link rel="stylesheet" href="../CSS/selectedcourse.css" />
+    <title>Selected Course</title>
+  </head>
+  <body>
+    <header>
+    <%- include('./partials/header') %>
+    </header>
+
+    <h1>Selected Course</h1>
+    <div class="display">
+      <p>Display Selected Course Name</p>
+    </div>
+
+    <div class="courseinfo">
+      <div class="coursename">
+        <label for="coursename">Course Name:</label>
+        <input type="text" id="coursename" name="coursename" placeholder="Type in Course Name" />
+      </div>
+
+      <div class="coursedescription">
+        <label for="coursedescription">Course Description:</label>
+        <textarea
+          id="coursedescription"
+          name="coursedescription"
+          rows="6"
+          cols="80"
+          placeholder="Type in Course Description"
+        ></textarea>
+      </div>
+
+      <div class="instructor">
+        <label for="instructor">Instructor:</label>
+        <input type="text" id="instructor" name="instructor" placeholder="Type in Instructor" />
+      </div>
+    </div>
+
+    <input type="button" class="editbutton" name="edit" value="Edit" />
+  </body>
+</html>

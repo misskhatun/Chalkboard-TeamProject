@@ -1,0 +1,36 @@
+table {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+td,
+th {
+  border: 1px solid #dddddd;
+  text-align: left;
+  padding: 8px;
+}
+
+.studenttable,
+.instructortable,
+.coursestable,
+.database,
+.acceptrejecttable {
+  margin: 5%;
+  overflow-x: auto;
+}
+
+p {
+  color: rgb(83, 0, 0);
+}
+
+/* tr:nth-child(even) {
+  background-color: #e4e4e4;
+} */
+body{
+  background-color:cadetblue
+}
+
+.pic{
+  width:200px;
+}

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../CSS/gradelist.css" />
+    <link rel="stylesheet" href="../CSS/header.css" />
+    <script src="../JS/gradelist.js" defer></script>
+    <title>List of Grades Page</title>
+  </head>
+
+  <body>
+    <header>
+    <%- include('./partials/header') %>
+    </header>
+    <img class="pic" src="/img/chalkboard-logos_white.png" alt="logo">
+    <div class="acceptrejecttable">
+      <h1>Instructor Accept/Reject Page</h1>
+      <table>
+        <tr>
+          <th>Student Name</th>
+          <th>Course</th>
+          <th>Assignment Number</th>
+          <th>Grading</th>
+        </tr>
+        <tr>
+          <td>test test</td>
+          <td>CS111</td>
+          <td>61bac5c3a7b809d069d86333</td>
+          <td><input type="button" class="button" value="Grade" /></td>
+        </tr>
+      </table>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,95 @@
+main {
+  display: flex;
+}
+
+a:link {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+h1 {
+  text-align: center;
+}
+
+#assignmentlist {
+  flex-direction: column;
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: 20px;
+  font-size: 1.3em;
+  border: 5px solid gray;
+}
+
+#assignments {
+  list-style-type: none;
+  width: 225px;
+  padding: 10px;
+}
+
+#assignments li {
+  padding: 10px;
+}
+
+h2 {
+  margin-bottom: 0;
+  padding-bottom: 0;
+  align-self: center;
+}
+
+p {
+  font-size: 1.2em;
+  margin-left: 10vw;
+  margin-right: 10vw;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+#enrollbttn {
+  position: relative;
+  left: 45vw;
+  padding: 15px;
+  font-size: 1.5em;
+}
+
+@media only screen and (max-width: 770px) {
+  main {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  #assignmentlist {
+    margin: auto;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  main {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  p {
+    font-size: 1.2em;
+    margin-left: 3vw;
+    margin-right: 3vw;
+  }
+
+  button {
+    position: static;
+    margin: auto;
+    display: block;
+    padding: 15px;
+    font-size: 1.5em;
+  }
+}
+body{
+  background-color:cadetblue
+}
+
+.pic{
+  width:200px;
+  
+  
+}

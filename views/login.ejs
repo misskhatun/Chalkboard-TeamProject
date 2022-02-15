@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/CSS/login.css" />
+    <title>Login Page</title>
+  </head>
+  <body>
+    
+
+    <form class="login-form" action="/login" method="POST">
+    <p><% if (messages.error) { %>
+      <%= messages.error %>
+    <% } %></p>
+    <div class="login-form__logo-container">
+      <!-- <img class="login-form__logo" src="/img/chalkboard-logos_white.png" alt="Logo">  -->
+     
+      <h3 style="color: white; text-align: center;">Log in to your account</h3>
+  </div>
+  <div class="login-form__content">
+      <label for="email">Email:</label>
+      <input type="email" name="email" id="email" placeholder="Email Address" class="textinput" required />
+
+      <label for="password">Password:</label>
+      <input type="password" name="password" id="password" placeholder="Password" class="textinput" required />
+      <p>Select Your Role</p>
+      <br>
+      <span id="stuinstrucchoice">
+        <input  type="radio" id="student" name="accounttype" value="Student" required />
+        <label class="login-form__input" for="student" class="stuinstrucchoice">Student</label>
+        <input type="radio" id="instructor" name="accounttype" value="Instructor" required />
+        <label class="login-form__input" for="instructor" class="stuinstrucchoice">Instructor</label>
+
+        <span id = "adminchoice"><input type="radio" id="admin" name="accounttype" value="Admin" required />
+        <label class="login-form__input" for="admin" class="stuinstrucchoice">Admin</label></span>
+      </span>
+
+      <input class="login-form__input" style="margin-right:20px;" type="submit" value="Sign in" class="button" />
+      <p style="margin-left: 150px;">
+        
+        <a class="login-form__input"  href="/signup">Sign up</a>
+        
+      </p>
+    </div>
+    </form>
+    <img
+      src="/img/chalkboard-logos_transparent.png"
+      alt="Need Picture"
+      width="100"
+    />
+  </body>
+</html>

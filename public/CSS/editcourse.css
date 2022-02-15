@@ -1,0 +1,32 @@
+#editform {
+  margin: auto;
+  width: 50%;
+}
+
+ul.no-bullets {
+  list-style-type: none;
+  padding: 0;
+  margin: 0; 
+}
+
+li {
+  padding: 1vw;
+  text-align: left;
+}
+
+label {
+  font-size: 1.5em;
+} 
+
+.buttons input {
+  margin: 25px;
+  font-size: 1.2em;
+  padding: 8px;
+}
+body{
+  background-color:cadetblue
+}
+
+.pic{
+  width:200px;
+}

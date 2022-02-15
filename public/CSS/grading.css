@@ -1,0 +1,68 @@
+h1,
+p {
+  text-align: center;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+p {
+  font-size: 1.2em;
+}
+.questionanswermodule {
+  margin-left: 55px;
+}
+
+#submit {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 3%;
+  font-size: 1em;
+}
+
+div,
+label {
+  text-align: center;
+  margin-bottom: 2%;
+}
+
+.assignmentdesc {
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  margin-bottom: 2vw;
+}
+
+.grade,
+.feedback {
+  display: block;
+}
+
+#submit {
+  display: block;
+  margin: 15px auto;
+}
+
+.correcttypeclass {
+  padding-right: 22px;
+}
+
+@media only screen and (max-width: 600px) {
+  input {
+    margin: 15px auto;
+  }
+
+  .questionanswermodule {
+    margin-left: 25px;
+  }
+}
+
+body{
+  background-color:cadetblue
+}
+
+.pic{
+  width:200px;
+  
+  
+}

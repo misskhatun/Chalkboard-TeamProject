@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../CSS/header.css" />
+    <link rel="stylesheet" href="../CSS/studentroster.css" />
+    <title>Student Roster</title>
+  </head>
+  <body>
+    <header>
+    <%- include('./partials/header') %>
+    </header>
+    <img class="pic" src="/img/chalkboard-logos_white.png" alt="logo">
+    <div class="center1">
+      <h2>
+        <span id="coursename"></span>
+      </h2>
+      <div class="roster">
+        <h1>Student Roster</h1>
+      <div class="roster">
+        <table class="center">
+          <tr>
+            <th>Course ID</th>
+            <th>Student ID</th>
+          </tr>
+          <tr>
+            <% data.forEach((course) => { %>
+              <td><%= course.coursename%></td>
+              <td><%= course.students%></td>
+            </tr>
+            <% }) %>
+          </tr>
+        </table>
+      </div>
+    </div>
+  </body>
+</html>

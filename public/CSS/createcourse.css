@@ -1,0 +1,44 @@
+h1 {
+  text-align: center;
+}
+
+#coursediv,
+#instructordiv,
+#coursedesc {
+  margin: auto;
+  width: 40%;
+  padding: 1%;
+}
+
+#coursedescription {
+  margin-top: 2%;
+}
+
+.button {
+  margin: auto;
+  display: block;
+  padding: 10px;
+  font-size: 1.2em;
+}
+
+@media only screen and (max-width: 990px) {
+  textarea {
+    width: 22em;
+  }
+}
+
+@media only screen and (max-width: 450px) {
+  textarea {
+    width: 15em;
+  }
+}
+
+body{
+  background-color:cadetblue
+}
+
+.pic{
+  width:200px;
+  
+  
+}

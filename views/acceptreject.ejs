@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../CSS/acceptreject.css" />
+    <link rel="stylesheet" href="../CSS/header.css" />
+    <title>Accept Reject Page</title>
+  </head>
+
+  <body>
+    <header>
+    <%- include('./partials/header') %>
+    </header>
+    <img class="pic" src="/img/chalkboard-logos_white.png" alt="logo">
+    <div class="acceptrejecttable">
+      <h1>Instructor Accept/Reject Page</h1>
+      <table>
+        <tr>
+          <th>Student Name</th>
+          <th>Requested Course</th>
+          <th>Course ID</th>
+          <th>Accept/Reject</th>
+        </tr>
+        <tr>
+          <% studentlist.forEach(students => {%>
+
+            <% if(students.accounttype=="Student"){%>
+            <td><%= students.fname%> <%= students.lname%> </td>
+            <td>English</td>
+            <td>61bab7c3a8e137dfff0f1432</td>
+          <%}%>
+          <%})%>
+          <td>
+            <input type="button" class="button" value="Accept" />
+            <input type="button" class="button" value="Reject" />
+          </td>
+        </tr>
+      </table>
+    </div>
+  </body>
+</html>

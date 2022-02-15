@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../CSS/searchresults.css" />
+    <link rel="stylesheet" href="../CSS/header.css" />
+    <title>Search Results</title>
+  </head>
+
+  <body>
+    <header>
+    <%- include('./partials/header') %>
+    </header>
+    <img class="pic" src="/img/chalkboard-logos_white.png" alt="logo">
+    <div id="searchbar">
+      <form action="/searchresults" method="POST">
+      <!-- <img src="../img/magnifying-glass-ga7dc5fc0e_640.jpg" alt="A magnifying glass" width="25" /> -->
+        <input type="text" id="searchterm" name="searchterm" placeholder="Search for Courses" />
+        <button type="submit" name="search" value="searchbutton">Search</button>
+      </form>
+    </div>
+
+    <main>
+      <h1>
+        <% if (data) { %> 
+          <h1>
+            Search results for:
+            <span id="spansearchterm"><%= search%></span>
+          </h1>
+            <ul class="list">
+              <% data.forEach((result) => { %>
+                <li class="classchoice">
+                  <p>
+                    <% let link = "/course/" + result.id %>
+                    <a href = <%= link %> >
+                    <%= result.coursename %> </a> - 
+                    <span class="classdesc">
+                    <% if(result.coursedesc.length > 90) var result = result.coursedesc.substring(0,90) + "...";%>
+                    <%= result %>
+                    </span>
+                  </p>
+                </li>
+              <% }) %>
+            </ul>
+        <% } %>
+      <section class="project-item">
+          <tr>
+            <h4>Available Course</h4>
+              <td><a href="/course/61bad65a3e831b0e4f851ab7"> Math 142</a></td>
+              <br>
+              <td><a href="/course/61bad6ba3e831b0e4f851ac1"> Math 143</a></td>
+              <br>
+              <td><a href="/course/61bad8bf3e60e526cf5d96b8">English101</a></td>
+          </tr>
+         
+      </section>
+      
+    </main>
+  </body>
+</html>

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/CSS/login.css" />
+    <script src="/JS/signup.js"></script>
+    <title>Sign Up</title>
+  </head>
+  <body>
+    <form class="login-form" id="login" action="/signup" method="POST">
+      <div class="login-form__logo-container">
+        <img class="login-form__logo" src="./img/chalkboard-logos_white.png">
+    </div>
+      <p id = "errormsg"></p>
+      <div class="login-form__content">
+      <label for="firstname">First Name:</label>
+      <input class="login-form__input" type="text" name="firstname" id="firstname" placeholder="First Name" class="textinput" required />
+
+      <label for="lastname">Last Name:</label>
+      <input class="login-form__input" type="text" name="lastname" id="lastname" placeholder="Last Name" class="textinput" required />
+
+      <label for="email">Email:</label>
+      <input class="login-form__input" type="email" name="email" id="email" placeholder="Email Address" class="textinput" required />
+
+      <label for="password">Password:</label>
+      <input class="login-form__input" type="password" name="password" id="password" placeholder="Password" class="textinput" required />
+
+      <label  for="confirmpassword">Confirm Password:</label>
+      <input class="login-form__input"
+        type="password"
+        name="confirmpassword"
+        id="confirmpassword"
+        placeholder="Confirm Password"
+        class="textinput"
+        required
+      />
+
+      <p>Select Your Role</p>
+
+      <span id="stuinstrucchoice">
+        <input  type="radio" id="student" name="accounttype" value="Student" required />
+        <label class="login-form__input"  for="student">Student</label>
+        <input type="radio" id="instructor" name="accounttype" value="Instructor" required />
+        <label class="login-form__input" for="instructor">Instructor</label>
+      </span>
+      <input style="margin-bottom: 20px; margin-left: 145px; margin-top: 20px;" type="submit" value="Sign Up" id="submit" class="button" />
+
+      <p>
+       
+        <a  class="login-form__input" style="margin-left: 145px;" href="/login">Login</a>
+      </p>
+    </div>
+    </form>
+  </body>
+</html>

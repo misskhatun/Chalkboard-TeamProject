@@ -1,0 +1,59 @@
+ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 2%;
+}
+
+.list {
+  margin: 1%;
+}
+
+form {
+  text-align: left;
+}
+
+#searchbar {
+  margin: 2%;
+}
+
+.submitbutton {
+  margin-left: 3%;
+}
+
+h1 {
+  margin: 25px;
+}
+
+.classchoice {
+  display: block;
+  margin: 20px;
+  font-size: 1.2em;
+}
+
+.submitbutton {
+  font-size: 1.2em;
+  padding: 0.5em;
+  margin-left: 10%;
+}
+
+@media only screen and (max-width: 555px) {
+  .submitbutton {
+    margin: auto;
+    margin-left: 30%;
+  }
+
+  .classchoice {
+    font-size: 1em;
+  }
+}
+body{
+  background-color:cadetblue;
+  
+}
+
+.pic{
+  width:200px;
+}
+.project-item{
+  margin-bottom: 20px;
+}

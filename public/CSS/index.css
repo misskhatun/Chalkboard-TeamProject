@@ -1,0 +1,202 @@
+a:link {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+a:visited {
+  color: inherit;
+}
+
+#imgcontainer {
+  background-size: 265px 100%;
+  background-repeat: no-repeat;
+  float: left;
+  margin-left: 2vw;
+  margin-top: 2vw;
+}
+
+nav {
+  font-size: 1.2em;
+  margin-top: 3vw;
+  border: 1px solid rgb(200, 200, 200);
+  width: 263px;
+}
+
+nav li {
+  list-style: none;
+  margin: 10px;
+  padding-right: 25px;
+}
+
+main {
+  margin-top: 3vw;
+  margin-left: 30vw;
+}
+
+main li {
+  list-style: none;
+  font-size: 2em;
+  border: 40px;
+  padding: 20px;
+}
+
+@media screen and (max-width: 1520px) {
+  main {
+    margin-left: 40vw;
+  }
+}
+
+@media screen and (max-width: 1120px) {
+  main {
+    margin-left: 35vw;
+    font-size: 0.9em;
+  }
+
+  #imgcontainer {
+    padding-top: 18px;
+  }
+}
+
+@media screen and (max-width: 910px) {
+  main {
+    margin-left: 45vw;
+    font-size: 0.8em;
+  }
+}
+
+@media only screen and (max-width: 630px) {
+  #imgcontainer {
+    display: inline-block;
+    width: 100%;
+    margin-bottom: 25px;
+    padding-top: 11px;
+  }
+
+  main {
+    float: none;
+    margin-left: 15vw;
+    background-color: cadetblue;
+  }
+
+  h1 {
+    font-size: 1.8em;
+  }
+
+  #courselist {
+    font-size: 0.8em;
+    padding-left: 0;
+  }
+}
+
+body{
+ 
+  background-color:cadetblue
+  
+}
+
+.pic{
+  width:200px;
+  margin-right: 100px;
+
+}
+
+
+html {
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+body {
+  color: #343434;
+  margin: 0;
+  padding: 0;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 15px;
+  line-height: 1.5;
+}
+img {
+  width: 300px;
+  margin-left: 100px;
+  position: relative;
+ 
+}
+a {
+  color: #FFE66D;
+}
+a:hover {
+  text-decoration: none;
+}
+h1 {
+  font-size: 100px;
+  line-height: 1;
+}
+h2 {
+  font-size: 45px;
+}
+h1, h2 {
+  font-family: 'Caveat', cursive;
+  font-weight: 400;
+  margin: 0;
+}
+.content-wrap {
+  max-width: 800px;
+  width: 85%;
+  margin: 0 auto;
+  padding: 60px 0;
+}
+h3 {
+  margin-bottom: 0;
+}
+.item-details h3 + p {
+  font-style: italic;
+}
+.item-details h3 ~ p {
+  margin: 0;
+}
+.divider > section {
+  /* border-bottom: 1px dashed #343434;
+  padding: 25px 0; */
+}
+.divider > section:last-of-type {
+  border-bottom: none;
+}
+
+
+/* Profile
+------------------------------------*/
+header {
+  background: #97938b;
+  color: #a91900;
+  text-align: center;
+}
+
+
+.projects{
+  background:rgb(190, 185, 185);
+  margin-top:200px;
+}
+footer{
+  background:gray;
+}
+.education{
+  background:darkcyan;
+
+}
+a.hover{
+  background-color: red;
+}
+
+.nav{
+border:1px solid;
+padding:5px;
+background-color:rgb(128, 124, 122);
+font-family:Georgia, 'Times New Roman', Times, serif;
+color:lightblue;
+text-decoration: rgb(238, 238, 238);
+}
+

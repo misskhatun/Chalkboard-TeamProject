@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../CSS/index.css" />
+    <link rel="stylesheet" href="../CSS/header.css" />
+    <title>Home Page</title>
+  </head>
+  <body>
+    <header>
+    <%- include('./partials/header') %>
+    </header>
+    
+    <% if (accounttype == "Instructor" || accounttype == "Admin") { %>
+      <div id="imgcontainer">
+        <nav>
+          <ul id="instructorlist">
+            <li><a href="/">Home</a></li>
+            <li><a href="/searchresults">Search</a></li>
+            <li><a href="/createcourse">Create Course</a></li>
+            <li><a href="/createassignment">Create Assignment</a></li>
+            <li><a href="/editcourse">Edit Course</a></li>
+            <li><a href="/studentroster">Student Roster</a></li>
+            <li><a href="/acceptreject">Enrollment Requests</a></li>
+            <li><a href="/gradelist">Grade Assignments</a></li>
+            <% if (accounttype == "Admin") {%>
+              <li><a href="/adminpage">Admin View</a></li>
+            <% } %>
+          </ul>
+        </nav>
+      </div>
+    <% } %>
+    <main>
+     
+    
+     
+       
+      </ul>
+    </main>
+    <img class="pic" src="/img/chalkboard-logos_white.png" alt="logo">
+    <section class="projects">
+      <div class="content-wrap divider">
+        <h2>Welcome!</h2>
+        <img src="/img/teaching.jpeg" src="pic">
+
+    
+        <section class="project-item">
+        
+         
+         
+          
+        </section>
+        <h2> MY Courses</h2>
+        <a  class="nav" href="/course/61bab7c3a8e137dfff0f1432?enroll=Enroll">Enlish</a> 
+        <!-- <a class="nav" href="class">Course 2</a> 
+        <a class="nav"href="class">Course 3</a>  -->
+
+      </div>
+    </section>
+
+
+    <!-- <section class="work-experience">
+      <div class="content-wrap item-details divider">
+        <h2>Courses Enrolled</h2>
+        </div>
+        </section> -->
+
+
+   
+    <section class="education">
+      <div class="content-wrap item-details">
+       
+        </section>
+
+        
+      </div>
+      </section>
+  
+
+    <!-- ************  CONTACT INFO / SOCIAL MEDIA  ************ -->
+    <footer>
+      <div class="content-wrap">
+        <h2>Let's Keep in Touch!</h2>
+
+        <!-- Social media and contact links. Add or remove any networks. -->
+        <ul class="contact-list">
+        
+        </ul>
+      </div>
+    </footer>
+  </main>
+</body>
+</body>
